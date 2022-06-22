@@ -13,7 +13,44 @@
 @import "../components/progress-bar.css";
 
 /* custom style goes below this line */
-
-section.container.bg-main {
+.hero {
   padding-bottom: 20px;
 }
+
+.hero > .row-short {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+/* Taip apsirašom logo dėl SEO */
+.logo {
+  height: 64px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.main-title {
+  font-size: 70px;
+  text-transform: uppercase;
+}
+
+.main-description {
+  font-size: 20px;
+}
+
+.clock {
+  margin: 40px 0;
+}
+
+footer.container {
+  padding-top: 0;
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 64px;
+  }
+} ;
