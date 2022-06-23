@@ -13,6 +13,8 @@
 @import "../components/progress-bar.css";
 
 /* custom style goes below this line */
+
+/* HERO SECTION - START */
 .hero {
   padding-bottom: 20px;
 }
@@ -53,4 +55,128 @@ footer.container {
   .main-title {
     font-size: 64px;
   }
-} ;
+}
+
+/* HERO SECTION - END */
+
+/* MAIN SECTION - START */
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+}
+
+.right-column {
+  width: 40%;
+}
+
+.column-title {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.column-description {
+  font-size: 17px;
+  color: #777;
+}
+
+.column-description > a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.column-description > a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .main-content {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .main-content > * {
+    width: 100%;
+  }
+}
+
+/* MAIN SECTION - END */
+
+/* FOOTER SECTION START */
+.socials {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #fff8;
+}
+
+.socials > a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  transition: all 0.5s;
+}
+.socials > a:hover {
+  background-color: #fff;
+  color: var(--main-color);
+}
+
+footer.container {
+  padding-top: 0;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+.footer-logo {
+  margin: 40px 0;
+}
+
+.credits {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  color: #fff8;
+}
+.credits > p > a {
+  color: #fff;
+}
+
+.credits > p {
+  position: relative;
+}
+
+.credits > p::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 18px;
+  background-color: #fff;
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.credits > p:last-child:after {
+  display: none;
+}
+.bottom-text {
+  color: #fff8;
+}
+
+.bottom-text > a {
+  color: #fff;
+}
+
+/* FOOTER SECTION END */
