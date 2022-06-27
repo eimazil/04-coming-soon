@@ -17,6 +17,12 @@
 /* HERO SECTION - START */
 .hero {
   padding-bottom: 20px;
+  background-image: url(../../img/background-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  background-attachment: fixed;
 }
 
 .hero > .row-short {
@@ -180,3 +186,7 @@ footer.container {
 }
 
 /* FOOTER SECTION END */
+
+.clock {
+  width: 100%;
+}
