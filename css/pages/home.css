@@ -121,6 +121,7 @@ footer.container {
   justify-content: center;
   padding: 20px 0;
   border-bottom: 1px solid #fff8;
+  position: relative;
 }
 
 .socials > a {
@@ -137,6 +138,24 @@ footer.container {
 .socials > a:hover {
   background-color: #fff;
   color: var(--main-color);
+}
+
+.socials > .back-to-top {
+  position: absolute;
+  background-color: var(--secondary-color);
+  top: 0;
+  right: -14px;
+  transform: translateY(-50%);
+  border: 2px solid var(--secondary-color);
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials > .back-to-top:hover {
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 footer.container {
