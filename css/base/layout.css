@@ -28,6 +28,9 @@
 }
 
 @media (max-width: 700px) {
+  .socials > .back-to-top {
+    display: none;
+  }
   .container > .row,
   .container > .row-short {
     width: 400px;

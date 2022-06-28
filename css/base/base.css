@@ -11,6 +11,7 @@ body {
 }
 
 :root {
+  scroll-behavior: smooth;
   --main-color: #03a9f5;
   --secondary-color: #ea1e63;
 }
